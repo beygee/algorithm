@@ -1,7 +1,22 @@
-t = ([],1)
 
-print(t)
+class MyClass:
+    def __init__(self):
+        self.data = []
 
-t[0].append(1)
+    i = 12345
+    def f(self):
+        return 'helloword'
 
-print(t)
+class Complex:
+    def __init__(self, realpart, imagpart):
+        self.r = realpart
+        self.i = imagpart
+
+x = Complex(3.0, -4.5)
+print(x.r, x.i)
+
+a = MyClass()
+b = MyClass()
+
+a.i = 5
+print(a.i, b.i)
